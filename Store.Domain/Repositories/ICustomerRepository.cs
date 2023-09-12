@@ -10,13 +10,5 @@ namespace Store.Domain.Repositories
     public interface ICustomerRepository
     {
         Customer Get(Guid id);
-
-        IEnumerable<Customer> GetAll();
-
-        void Save(Customer customer);
-
-        void Update(Customer customer);
-
-        void Delete(Guid id);
     }
 }
