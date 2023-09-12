@@ -1,0 +1,22 @@
+﻿using Store.Domain.Entities;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Store.Domain.Repositories
+{
+    public interface ICustomerRepository
+    {
+        Customer Get(Guid id);
+
+        IEnumerable<Customer> GetAll();
+
+        void Save(Customer customer);
+
+        void Update(Customer customer);
+
+        void Delete(Guid id);
+    }
+}
