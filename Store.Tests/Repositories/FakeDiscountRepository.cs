@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Store.Tests.Repositories
 {
-    internal class FakeDiscountRepository : IDiscountRepository
+    public class FakeDiscountRepository : IDiscountRepository
     {
         public Discount Get(string code)
         {

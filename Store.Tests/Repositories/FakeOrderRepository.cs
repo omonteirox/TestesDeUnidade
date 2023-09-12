@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Store.Tests.Repositories
 {
-    internal class FakeOrderRepository : IOrderRepository
+    public class FakeOrderRepository : IOrderRepository
     {
         public void save(Order order)
         {

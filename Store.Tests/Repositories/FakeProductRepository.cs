@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Store.Tests.Repositories
 {
-    internal class FakeProductRepository : IProductRepository
+    public class FakeProductRepository : IProductRepository
     {
         public void Delete(Guid id)
         {

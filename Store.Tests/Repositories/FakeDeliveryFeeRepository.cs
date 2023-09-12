@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Store.Tests.Repositories
 {
-    internal class FakeDeliveryFeeRepository : IDeliveryFeeRepository
+    public class FakeDeliveryFeeRepository : IDeliveryFeeRepository
     {
         public decimal Get(string zipCode)
         {
