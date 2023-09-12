@@ -23,7 +23,7 @@ namespace Store.Domain.Commands
         {
             AddNotifications(new Contract<Notification>()
                 .Requires()
-                .IsGreaterThan(Quantity, 0, "Quantity", "Quantidade Inválida").IsGreaterThan(Product.ToString(), 32, "Product", "Produto Inválido")
+                .IsGreaterThan(Quantity, 0, "Quantity", "Quantidade Inválida").IsGreaterThan(Product.ToString(), 32, "ProductCommand", "Produto Inválido")
                 );
         }
     }

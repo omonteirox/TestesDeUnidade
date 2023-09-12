@@ -9,6 +9,6 @@ namespace Store.Domain.Repositories
 {
     public interface IOrderRepository
     {
-        void save(Order order);
+        void Save(Order order);
     }
 }

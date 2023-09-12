@@ -5,9 +5,9 @@ namespace Store.Tests.Repositories
 {
     public class FakeCustomerRepository : ICustomerRepository
     {
-        public Customer Get(Guid id)
+        public Customer Get(string document)
         {
-            if (id == Guid.Parse("1b1d7e4f-9f1f-4a1d-9a5f-6d8d6b5fe0b1"))
+            if (document == "12345678")
                 return new Customer("Bruce", "Wayne");
             return null;
         }

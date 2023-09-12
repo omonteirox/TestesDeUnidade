@@ -9,6 +9,6 @@ namespace Store.Domain.Repositories
 {
     public interface ICustomerRepository
     {
-        Customer Get(Guid id);
+        Customer Get(string document);
     }
 }

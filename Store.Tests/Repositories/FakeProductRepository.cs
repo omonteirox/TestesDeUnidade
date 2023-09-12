@@ -15,11 +15,16 @@ namespace Store.Tests.Repositories
             return;
         }
 
-        public Product Get(Guid id)
+        public IEnumerable<Product> Get(IEnumerable<Guid> ids)
         {
-            if (id == Guid.Parse("c0a0fd0e-0e5b-4e5a-8b6d-2f6a9a4b9e1a"))
-                return new Product("Produto 01", 10, true);
-            return null;
+            IList<Product> products = new List<Product>();
+            products.Add(new Product("Produto 01", 10, true));
+            products.Add(new Product("Produto 02", 10, true));
+            products.Add(new Product("Produto 03", 10, true));
+            products.Add(new Product("Produto 04", 10, false));
+            products.Add(new Product("Produto 05", 10, false));
+
+            return products;
         }
 
         public IEnumerable<Product> GetAll()
