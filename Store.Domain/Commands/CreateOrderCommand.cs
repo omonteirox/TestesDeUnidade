@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Store.Domain.Commands
 {
-    internal class CreateOrderCommand : Notifiable<Notification>, ICommand
+    public class CreateOrderCommand : Notifiable<Notification>, ICommand
     {
         public CreateOrderCommand()
         {

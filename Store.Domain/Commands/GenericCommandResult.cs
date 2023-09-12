@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Store.Domain.Commands
 {
-    internal class GenericCommandResult : ICommandResult
+    public class GenericCommandResult : ICommandResult
     {
         public GenericCommandResult(bool success, string message, object data)
         {

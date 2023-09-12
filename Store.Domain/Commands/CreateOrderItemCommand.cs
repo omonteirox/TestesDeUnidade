@@ -4,7 +4,7 @@ using Store.Domain.Commands.Contracts;
 
 namespace Store.Domain.Commands
 {
-    internal class CreateOrderItemCommand : Notifiable<Notification>, ICommand
+    public class CreateOrderItemCommand : Notifiable<Notification>, ICommand
     {
         public CreateOrderItemCommand()
         {
